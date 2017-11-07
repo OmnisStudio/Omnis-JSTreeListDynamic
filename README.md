@@ -5,7 +5,7 @@ The app can be viewed here http://tinyurl.com/jsgallery8, click on 'Tree List (D
 Requires Omnis Studio 8.1.2 or above
 
 ## Contents
-### JSTwitterTimeLine
+### JSTreeListDynamic
 
 This folder contains the source JSON files for the Omnis library in Github. 
 
