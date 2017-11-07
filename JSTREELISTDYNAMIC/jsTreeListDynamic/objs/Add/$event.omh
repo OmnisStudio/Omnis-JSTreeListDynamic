@@ -1,0 +1,11 @@
+On evClick
+	Calculate lIdent as $cinst.$objs.Tree.$currentnodeident
+	Calculate iUniqueIdent as iUniqueIdent+1
+	
+	Do lNodeList.$define(lText,lIcon,lIdent,lTag,lToolTip,lTextColor,lFlags)
+	Do lNodeList.$add(iNewNode,0,iUniqueIdent,'',iNewNode,0)
+	
+	Do lRow.$define(lAction,lParentNodeIdent,lPos,lNodeList)
+	Do lRow.$assigncols(kJSTreeActionAdd,lIdent,0,lNodeList)
+	
+	Do $cinst.$objs.Tree.$nodeaction.$assign(lRow) Returns #F

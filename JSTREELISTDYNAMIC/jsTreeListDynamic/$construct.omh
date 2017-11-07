@@ -1,0 +1,8 @@
+Do iNodeIcons.$define(iIconUrl)
+Do iNodeIcons.$add(iconurl(1633))
+Do iNodeIcons.$add(iconurl(1710))
+Do iNodeIcons.$add(iconurl(1622))
+
+;  initialize tree list
+Do iTreeList.$define(iText,iIcon,iIdent,iTag,iToolTip,iTextColor,iFlags,iChildren)
+Do iTreeList.$add('Car Parts',1,1000,'','Car parts for all makes',rgb(255,0,0),kJSTreeFlagHasChildren)

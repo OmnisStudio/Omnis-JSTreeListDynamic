@@ -1,0 +1,26 @@
+On evLoadNode
+	Do lNodeList.$define(lText,lIcon,lIdent,lTag,lToolTip,lTextColor,lFlags)
+	Switch pNodeIdent
+		Case 1000
+			Do lNodeList.$add('Brakes',2,1100,'','Brake Parts',rgb(0,150,0),kJSTreeFlagHasChildren)
+			Do lNodeList.$add('Electrical',2,1200,'','Electrical Parts',rgb(0,150,0),kJSTreeFlagHasChildren)
+			Do lNodeList.$add('Lubricants',2,1300,'','Engine Lubricants',rgb(0,150,0),kJSTreeFlagHasChildren)
+			Do lNodeList.$add('Suspension',2,1400,'','Suspension Parts',rgb(0,150,0),kJSTreeFlagHasChildren)
+		Case 1100     ;; Brakes
+			Do lNodeList.$add('Discs',3,1101,'','Brake Discs',kJSTreeFlagHasChildren)
+			Do lNodeList.$add('Pads',3,1102,'','Brake Pads',kJSTreeFlagHasChildren)
+			Do lNodeList.$add('Shoes',3,1103,'','Brake Shoes',kJSTreeFlagHasChildren)
+		Case 1200     ;; Electrical
+			Do lNodeList.$add('Alternators',3,1201,'','New Alternators',,0)
+			Do lNodeList.$add('Batteries',3,1202,'','New Batteries',0)
+			Do lNodeList.$add('Bulbs',3,1203,'','Replacement Blubs',0)
+			Do lNodeList.$add('Starter Motors',3,1204,'','New Starter Motors',0)
+		Case 1300     ;; Lubricants
+			Do lNodeList.$add('Anti Freeze',3,1301,'','Radiator Anti Freeze',0)
+			Do lNodeList.$add('Oil',3,1302,'','Engine Oil',0)
+		Case 1400     ;; Suspension
+			Do lNodeList.$add('Shock Absorbers',3,1401,'','New Shock Absorbers',0)
+			Do lNodeList.$add('Springs',3,1402,'','New Springs',0)
+	End Switch
+	
+	Calculate $cinst.$objs.Tree.$nodedata as lNodeList

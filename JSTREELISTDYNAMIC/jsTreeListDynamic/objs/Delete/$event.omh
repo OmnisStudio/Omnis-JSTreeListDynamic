@@ -1,0 +1,9 @@
+On evClick
+	Calculate lIdent as $cinst.$objs.Tree.$currentnodeident
+	If lIdent>0
+		Do lRow.$define(lAction,lParentNodeIdent)
+		Do lRow.$assigncols(kJSTreeActionDelete,lIdent)
+		Do $cinst.$objs.Tree.$nodeaction.$assign(lRow) Returns #F
+	Else
+		Do $cinst.$showmessage('Select node to delete','jsGallery')
+	End If
