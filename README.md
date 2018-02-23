@@ -1,5 +1,5 @@
 # Omnis-JSTreeListDynamic
-Library uses the JS TreeList component to show how nodes can be created and deleted dynamically
+Library uses the JS TreeList component to show how nodes can be created and deleted dynamically.
 The app can be viewed here http://tinyurl.com/jsgallery8, click on 'Tree List (Dynamic)' in the list.
 
 Requires Omnis Studio 8.1.2 or above
